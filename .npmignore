@@ -1,4 +1,5 @@
 .vscode
+node_modules
 src
 tsconfig.json
 .eslintignore
@@ -6,6 +7,6 @@ tsconfig.json
 .gitignore
 .prettierignore
 .prettierrc
-tsconfig.json
 licence
+tsconfig.json
 vitest.config.js

@@ -45,29 +45,33 @@ npx dev-api-express
 │ │ |── index.js
 │ │ └── node-icon.ico
 ├── src
+│ ├── app
+│ │ └── app.ts
 │ ├── config
 │ │ └── apiConfig.ts
 │ ├── controllers
-│ │ ├── someController.ts
-│ │ └── someController.test.ts
+│ │ └── someController.ts
 │ ├── middlewares
-│ │ ├── otherMiddleware.ts
-│ │ └── sometMiddleware.ts
+│ │ └── logger.ts
 │ ├── routes
 │ │ └── someRouter.routes.ts
 │ ├── index.ts
-│ ├── test.test.ts
-├── build
+├── tests
+│ ├── controllers
+│ │ └── someController.test.ts
+│ ├── middlewares
+│ │ └── logger.test.ts
+├── dist
 │ └── (Compiled TypeScript)
-├── .env.example
+├── .env
 ├── .eslintignore
 ├── .eslintrc
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc
-├── package-lock.json
 ├── package.json
 ├── readme.md
+├── vitest.config
 └── tsconfig.json
 ```
 
@@ -84,30 +88,34 @@ npx dev-api-express
 │ |── index.js
 │ └── node-icon.ico
 ├── src
+│ ├── app
+│ │ └── app.js
 │ ├── config
 │ │ └── apiConfig.js
 │ ├── controllers
-│ │ ├── someController.js
-│ │ └── someController.test.js
+│ │ └── someController.js
 │ ├── middlewares
-│ │ ├── otherMiddleware.js
-│ │ └── sometMiddleware.js
+│ │ └── logger.js
 │ ├── routes
 │ │ └── someRouter.routes.js
 │ ├── index.js
-│ ├── test.test.js
-├── .env.example
+├── tests
+│ ├── controllers
+│ │ └── someController.test.js
+│ ├── middlewares
+│ │ └── logger.test.js
+├── .env
 ├── .eslintrc
 ├── .gitignore
 ├── .prettierrc
-├── package-lock.json
 ├── package.json
-└── readme.md
+├── readme.md
+└── vitest.config
 ```
 
 ## Contributing
 
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request on [GitHub](https://github.com/federico-pena/dev-api-express).
 
 1. Fork the repository.
 2. Create a new branch (git checkout -b feature/your-feature).
